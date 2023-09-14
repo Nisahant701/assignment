@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("span").parents().css({"border": "2px solid red"})
+        })
+    </script>
+    <style>
+       body *{
+            border: 2px solid rgb(255, 0, 0);
+            padding: 10px;
+            display: block;
+      
+        }
+        body{
+            padding: 0 30% 1% 1%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    body (great-great-grandparent)
+    <div>
+        div(great-parent)
+        <ul>
+            ul(grand parent)
+            <li>
+                li(direct parent)
+                <span style="border: 2px solid black;">
+                    span
+                </span>
+            </li>
+        </ul>
+    </div>
+ 
+</body>
+</html>
